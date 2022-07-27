@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "b31bc75d-c913-4dbf-8d0e-ede27402e478",
+		"name": "matrices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "echo",
+			"id": "c92525c8-6bbf-4158-8c94-17ea89a4c0fe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/echo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invert",
+			"id": "488b5a6f-ef66-48b1-a27d-8aff1fff142f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/invert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "flatten",
+			"id": "b9f28921-3a89-41d6-bca0-50549cf2d170",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/flatten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"flatten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sum",
+			"id": "291e5fd3-5192-44fe-814f-13271fe89b46",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multiply",
+			"id": "0f6fda7e-1e4a-43fd-a37b-974b941ca069",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/multiply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"multiply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": ".",
+			"id": "94615117-fb96-4c7f-b0e1-38dce170bdd4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_csvfile",
+							"type": "file",
+							"src": "matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/flatten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"flatten"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
