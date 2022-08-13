@@ -1,3 +1,37 @@
+TO RUN THE BACKEND CHALLENGE FILES
+Requirements
+-git (https://git-scm.com/)
+-xampp (https://www.apachefriends.org/download.html) OR laragon for windows(https://laragon.org/download/) 
+-Include Php in Path system variable (windows) 
+
+Files can be found in  https://github.com/lollydeeo123/updated-league-challenge/tree/master
+
+Open terminal,
+cd to www folder (laragon) or htdocs folder (xampp)
+run git clone https://github.com/lollydeeo123/updated-league-challenge.git
+run cd "name-of-folder-where-cloned-files-are-located"
+run php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+run php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+run php composer-setup.php
+run composer install
+run php -r "unlink('composer-setup.php');"
+run cp .env.example .env
+run php artisan key:generate
+run php artisan serve //to start server
+
+Click Postman Invite link at https://app.getpostman.com/join-team?invite_code=0e899b766d9a7c3db35025c6d07a2ef2&target_code=e402c167c65693ab46c0daeb5aba25f7
+Accept the Postman Invite
+Enter email address and password to log in (or click on create new account if Postman is not installed)
+Click on Collections -> matrices to drop down the various requests of the challenge
+Click on POST echo 
+Click on the Body tab from the main window 
+Click on Select files to select the input csv file containing the matrix to be manipulated
+Click on Send to send the request. The results will be displayed in the results lower window
+Click on the other requests and click "Send" to view the results of other commands ie POST invert, POST flatten, etc
+
+*The BASE_URL is http://localhost:8000/api but can be modified by clicking the Environment "Quick look" icon wchich is right next to the "No Environment" drop down tab on the top right hand corner of the page
+** The solution can also be opened in the browser at address http://127.0.0.1:8000/ 
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
